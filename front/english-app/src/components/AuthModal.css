@@ -1,0 +1,79 @@
+/* Стили для модального окна */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px;  /* Общий отступ для всего окна */
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box; /* Чтобы padding не увеличивал общий размер */
+}
+
+.modal h2 {
+    color: #3498db;
+}
+
+.modal input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal button:hover {
+    background: #2980b9;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.toggle {
+    margin-top: 10px;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+    margin-bottom: 20px;  /* Чтобы между полем и кнопкой был отступ */
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px; /* Отступ от поля ввода */
+}

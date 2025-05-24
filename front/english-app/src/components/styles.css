@@ -1,0 +1,270 @@
+/* Контейнер для теста */
+.test-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* Заголовок теста */
+.test-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* Описание теста */
+.test-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Блок вопроса */
+.question-block {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст вопроса */
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Варианты ответа */
+.answer-label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background: #e9ecef;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.answer-label:hover {
+    background: #d6d8db;
+}
+
+/* Кнопка отправки */
+.submit-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+
+/* Блок результата */
+.result {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Контейнер списка тестов */
+.tests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+/* Заголовок страницы */
+.tests-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Кнопки выбора тестов */
+.test-button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover,
+.test-button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* Контейнер результата */
+.result-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ошибки */
+.incorrect-list {
+    list-style: none;
+    padding: 0;
+}
+
+.incorrect-list li {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Неправильные ответы */
+.wrong-answer {
+    color: red;
+    font-weight: bold;
+}
+
+/* Правильные ответы */
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.progress-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.tests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.test-block {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.incorrect-questions {
+    list-style: none;
+    padding: 0;
+}
+
+.incorrect-questions li {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.wrong-answer {
+    color: red;
+    font-weight: bold;
+}
+
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.clear-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+    background-color: #d9363e;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-window {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-confirm {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-cancel {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+

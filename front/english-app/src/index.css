@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-page {
+    background-color: #f0f0f0; /* Цвет фона */
+    background-image: url('./components/fon.jpg'); /* Изображение фона */
+    background-size: cover; /* Заполнение фона */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Не повторять */
+    min-height: 100vh; /* Минимальная высота для фона */
+}

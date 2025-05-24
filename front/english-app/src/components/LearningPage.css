@@ -1,0 +1,35 @@
+.learning-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.topic-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.topic-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.topic-button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.topic-section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+

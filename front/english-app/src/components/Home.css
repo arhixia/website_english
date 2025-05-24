@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.home-container {
+    padding: 40px;
+    margin-top: 20px;
+    max-width: 700px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Левая часть — текст */
+.home-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Анимация для заголовка */
+@keyframes slideIn {
+    0% { transform: translateX(-50px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+.welcome-text {
+    font-size: 24px;
+    color: #444;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 19px;
+    opacity: 0;
+    animation: fadeInText 0.5s ease-in-out forwards;
+}
+
+.welcome-text:nth-of-type(1) {
+    animation-delay: 0.2s;
+}
+
+.welcome-text:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+
+.welcome-text:nth-of-type(3) {
+    animation-delay: 0.6s;
+}
+
+.welcome-text:nth-of-type(4) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Блок выбора курса */
+.course-selection {
+    position: absolute;
+    right: -75%;
+    top: 75px;
+    width: 280px;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.course-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-button, .progress-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: scaleUp 0.3s ease-out forwards;
+}
+
+.course-button {
+    background-color: #3498db;
+    color: white;
+}
+
+.course-button:hover {
+    background-color: #217dbb;
+    transform: scale(1.05);
+}
+
+.progress-button {
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    height: 60px; /* фиксируем высоту */
+    padding: 0 20px; /* только по бокам */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.progress-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Анимация для кнопок */
+@keyframes scaleUp {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.progress-container {
+    margin-top: 50px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.bottom-text {
+    position: fixed; /* Фиксированное положение */
+    bottom: 20px;    /* Отступ от нижнего края */
+    right: 20px;     /* Отступ от правого края */
+    font-size: 22px; /* Размер шрифта */
+    color: #444;     /* Цвет текста */
+    font-family: 'Poppins', sans-serif; /* Используем тот же шрифт */
+    text-align: right; /* Выравнивание по правому краю */
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
