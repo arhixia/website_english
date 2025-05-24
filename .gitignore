@@ -1,12 +1,12 @@
-# Игнорируем системные файлы
+
 .idea/
 .vscode/
 
-# Исключаем зависимости
+
 node_modules/
 venv/
 __pycache__/
 
-# Игнорируем конфигурационные файлы
+
 .env
 package-lock.json
